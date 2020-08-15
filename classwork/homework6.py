@@ -6,37 +6,102 @@
 # Задание сделать с использованием enumerate.
 
 
-# my_list = ["qwe", "123", "asd", "zxc"]
-# my_list_new = []
-#
-# for index, value in enumerate(my_list):
-#   if index % 2:
-#     my_list_new.append(value[::-1])
-#   else:
-#     my_list_new.append(value)
-# print(my_list_new)
+my_list = ["qwe", "123", "asd", "zxc"]
+my_list_new = []
+
+for index, value in enumerate(my_list):
+  if index % 2:
+    my_list_new.append(value[::-1])
+  else:
+    my_list_new.append(value)
+print(my_list_new)
 
 #######################################################
 
 # 4. Дан список my_list в котором могум быть как строки так и целые числа.
 # Создать новый список в который поместить только строки из my_list.
 
-# my_list = ["qwerty", "12345", "asdfg", "67890"]
-# my_list_new = []
-# for index, value in enumerate(my_list):
-#     if type(value) == str:
-#         my_list_new.append(value)
-#     else:
-#         pass
-# print(my_list_new)
-
-
-# my_list_new.append(value) for value in my_list if value = str(value)
+my_list = ["qwerty", 12345, "asdfg", 67890]
+my_list_new = []
+for index, value in enumerate(my_list):
+    if type(value) == str:
+        my_list_new.append(value)
+    else:
+        pass
+print(my_list_new)
 
 #########################################################
 
 # 5. Дана строка my_str. Вывести символы, которые встречаются в строке только один раз.
 
-# my_str = "qweoppiuytrewasdfghjkllkjgfxcvbnmmnbvcxz"
+my_str = "qweoppiuytrewasdfghjkllkjgfxcvbnmmnbvcxz"
+my_set = set(my_str)
+for value in my_set:
+    print(value)
 
+#########################################################
+
+# 6. Даны две строки, вывести те символы, которые есть в обеих строках.
+
+my_str_1 = "1234567890qwertyzxcvbnm, +-*/"
+my_str_2 = "13579asdfghjkl;'+*zxcbnm,./"
+set_1 = set(my_str_1)
+set_2 = set(my_str_2)
+uniq_set = set_1.intersection(set_2)
+print(uniq_set)
+
+##########################################################
+
+# 8. Описать с помощью словаря следующую структуру для конкретного человека (можно придумать):
+# Фамилия
+# Имя
+# Возраст
+# Проживание
+#     Страна
+#     Город
+#     Улица
+# Работа
+#     Наличие
+#     Должность
+
+person = {"Фамилия": "Шаповалов",
+          "Имя": "Сергей",
+          "Возраст": 35,
+          "Проживание": {
+              "Страна": "Украина",
+              "Город": "Днепр",
+              "Улица": "Свердлова",
+          },
+          "Работа": {
+              "Наличие": "Да",
+              "Должность": "Водитель"
+          }
+          }
+
+print(person)
+
+##########################################################
+
+# 9. Описать с помощью словаря следующую структуру (рецепт ненастоящего торта, придумать и указать граммы для продуктов):
+
+tortik = {"Коржи": {
+    "Мука": 500,
+    "Молоко": 300,
+    "Масло": 150,
+    "Яйцо": 6,
+},
+    "Крем": {
+        "Сахар": 250,
+        "Масло": 100,
+        "Ваниль": 20,
+        "Сметана": 600,
+    },
+    "Глазурь": {
+        "Какао": 80,
+        "Сахар": 100,
+        "Масло": 50,
+    }
+}
+
+print(tortik)
 
