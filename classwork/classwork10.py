@@ -7,7 +7,7 @@ def read_txt(filename_with_path):
     return data
 def read_json(filename_with_path):
     with open(filename_with_path, 'r') as json_file:
-        data = json.load(json_file)
+        data = json_file.load(json_file)
     return data
 
 def read_csv(filename_with_path):
