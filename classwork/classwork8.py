@@ -1,5 +1,5 @@
-import os
-from utils import get_distance, get_area_gerone
+# import os
+# from utils import get_distance, get_area_gerone
 
 point_A = (10, 1)
 point_B = (10, 2)
