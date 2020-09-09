@@ -15,6 +15,7 @@ def name_and_path(path):
 
 result = name_and_path("C:\\Users\\User\\PycharmProjects\\-_-\\classwork\\classwork10.py")
 
+
 #######################################################
 
 # 2) функции передаем полный путь к папке в виде строки в формате "./path/to/folder",
