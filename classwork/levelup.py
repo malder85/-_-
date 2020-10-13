@@ -17,4 +17,17 @@
 # b = input("Введите второе число : ")
 # print(int(a) + int(b))
 
-name = input('Ваше имя? : ')
+# name = input('Ваше имя? : ')
+# print(list(name))
+
+# name = input('Введите ваше имя: ' )
+# count = input('Сколько раз вывести Ваше имя?: ' )
+#
+# print( name * int(count ))
+
+# name = input("Как тебя зовут, друг? : ")
+# print ("Пошёл ты нахуй, " + name)
+
+test = "string"
+test2 = 3
+print(test * test2)
